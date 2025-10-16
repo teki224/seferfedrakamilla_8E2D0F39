@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Főoldal - Agarak</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-custom">
         <nav>
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
@@ -18,7 +19,13 @@
         </nav>
 
         <div class="hero-container">
-            <h1>A világ leggyorsabb kutyája.</h1>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>A világ leggyorsabb kutyája.</h1>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="image-marquee">
@@ -44,15 +51,36 @@
             </div>
         </div>
 
-        <div class="">
-            <h2>De mégis mennyi az annyi?</h2>
-            <p>
-                Az agár testfelépítésnek köszönhetően az versenyeken elért sebessége átlagosan meghaladja a <bold>64 km/h</bold>-t.
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row g-4">
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <h2>De mégis mennyi az annyi?</h2>
+                            <p>Az agarak verseny közben mért sebessége átlagosan meghaladja a 64km/h-t!</p>
+                            <div class="input-group">
+                                <label for="distance-input">Távolság (km):</label>
+                                <input type="number" id="distance-input" placeholder="Pl. 100">
+                            </div>
+                            <p id="time-result"></p>
+                        </div>
+                    </div>
 
-            </p>
+                    <div class="col-12 col-md-6">
+                        <div class="card">
+                            <h2>Kutya-Ember Év Kalkulátor</h2>
+                            <p>Hány éves lenne az agár emberi évek szerint?</p>
+                            <div class="input-group">
+                                <label for="dog-age-input">Kutya életkora (év):</label>
+                                <input type="number" id="dog-age-input" placeholder="Pl. 5">
+                            </div>
+                            <p id="human-age-result"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div> <!--container vége-->
+    </div>
 
     <script src="script.js"></script>
 </body>
