@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eredet - Agarak</title>
+    <title>Eredet és Versenyzés - Agarak</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,7 +13,7 @@
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
                 <li><a href="care.html">Gondozás</a></li>
-                <li><a href="origin.html">Eredet</a></li>
+                <li><a href="origin.html">Eredet és Versenyzés</a></li>
             </ul>
             <button onclick="toggleTheme()" id="theme-toggle">Sötét mód</button>
         </nav>
@@ -22,27 +22,125 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
-                        <h1>Eredet</h1>
+                        <h1>Eredet és Versenyzés</h1>
                     </div>
                 </div>
                 
-                <div class="row mt-4">
+                <div class="row mt-4 g-4">
                     <div class="col-12 col-lg-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Ősi Eredet</h2>
+                            <p>Az agarak egyike a legősibb kutyafajtáknak, amelyek eredete több ezer évre nyúlik vissza.</p>
+                            <p><strong>Történelmi háttér:</strong></p>
+                            <ul>
+                                <li>Kb. 4000 éves egyiptomi falfestményeken már megjelennek</li>
+                                <li>A fáraók kedvelt vadászkutyái voltak</li>
+                                <li>Európába a keresztes háborúk idején kerültek</li>
+                                <li>Nagy-Britanniában lett tökéletesítve a fajta</li>
+                                <li>A középkorban csak a nemesek tarthattak agarakat</li>
+                            </ul>
                         </section>
                     </div>
 
                     <div class="col-12 col-lg-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Versenyzés</h2>
+                            <p>Az agár versenyzés több mint 100 éves múltra tekint vissza, és ma is népszerű sport világszerte.</p>
+                            <p><strong>Verseny típusok:</strong></p>
+                            <ul>
+                                <li><strong>Pályaverseny:</strong> 480-520 méter ovális pályán</li>
+                                <li><strong>Coursingverseny:</strong> Szabadterületen, élő nyulat utánzó szerkezet</li>
+                                <li><strong>Sprint:</strong> Egyenes pályán, maximum sebesség mérése</li>
+                                <li><strong>Átlagsebesség:</strong> 64-72 km/h között</li>
+                                <li><strong>Rekordsebesség:</strong> 72,4 km/h (történelmi adat)</li>
+                            </ul>
                         </section>
                     </div>
 
                     <div class="col-12 col-lg-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Modern Kor</h2>
+                            <p>Napjainkban az agarak egyre inkább családi kedvencekként élnek, miután lezárták versenyzési karrierjüket.</p>
+                            <p><strong>Adoption mozgalom:</strong></p>
+                            <ul>
+                                <li>Több ezer versenyzőből kivonult agár vár új otthonra</li>
+                                <li>Az agarak kiváló lakásban tartható kutyák</li>
+                                <li>Nyugodt természetűek, "kanapé krumplik"</li>
+                                <li>Sok mentőszervezet foglalkozik az elhelyezésükkel</li>
+                                <li>Az adoption programok egyre népszerűbbek világszerte</li>
+                            </ul>
                         </section>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card">
+                            <h2>Híres Versenyző Agarak</h2>
+                            <p>Az alábbi táblázat néhány kiemelkedő versenyítő agarat mutat be történelmi teljesítményükkel:</p>
+                            
+                            <div class="table-responsive">
+                                <table class="racing-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Név</th>
+                                            <th>Nemzet</th>
+                                            <th>Aktív évek</th>
+                                            <th>Győzelmek</th>
+                                            <th>Csúcssebesség (km/h)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="racing-table-body">
+                                        <tr>
+                                            <td>Ballyregan Bob</td>
+                                            <td>Írország</td>
+                                            <td>1984-1986</td>
+                                            <td>32</td>
+                                            <td>68.3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Mick the Miller</td>
+                                            <td>Írország</td>
+                                            <td>1928-1931</td>
+                                            <td>51</td>
+                                            <td>66.7</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Westmead Hawk</td>
+                                            <td>Ausztrália</td>
+                                            <td>2016-2019</td>
+                                            <td>45</td>
+                                            <td>70.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shavik Havoc</td>
+                                            <td>USA</td>
+                                            <td>1992-1994</td>
+                                            <td>28</td>
+                                            <td>72.4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Patricia's Hope</td>
+                                            <td>Írország</td>
+                                            <td>1971-1973</td>
+                                            <td>47</td>
+                                            <td>67.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Rapid Ranger</td>
+                                            <td>Nagy-Britannia</td>
+                                            <td>2000-2002</td>
+                                            <td>39</td>
+                                            <td>69.5</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div id="fastest-racer" class="stats-highlight" style="margin-top:1rem;"></div>
+
+                            <p style="margin-top:1rem;">Példa a programtétel alkalmazására: a fenti táblázat alapján egy kiválasztás (maximum) algoritmussal meghatározható, melyik kutya érte el a legnagyobb csúcssebességet.</p>
+                        </div>
                     </div>
                 </div>
             </div>

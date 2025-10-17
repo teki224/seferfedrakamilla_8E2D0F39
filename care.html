@@ -13,9 +13,9 @@
             <ul>
                 <li><a href="index.html">Főoldal</a></li>
                 <li><a href="care.html">Gondozás</a></li>
-                <li><a href="origin.html">Eredet</a></li>
+                <li><a href="origin.html">Eredet és Versenyzés</a></li>
             </ul>
-            <button onclick="toggleTheme()" id="theme-toggle">Sötét mód</button>
+            <button id="theme-toggle">Sötét mód</button>
         </nav>
 
         <div class="content">
@@ -26,23 +26,107 @@
                     </div>
                 </div>
                 
-                <div class="row mt-4">
+                <div class="row mt-4 g-4">
                     <div class="col-12 col-md-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Táplálkozás</h2>
+                            <p>Az agarak speciális táplálkozási igényekkel rendelkeznek magas anyagcseréjük miatt.</p>
+                            <ul>
+                                <li><strong>Minőségi fehérje:</strong> 25-30% fehérjetartalmú táp ajánlott</li>
+                                <li><strong>Étkezések száma:</strong> Napi 2-3 kisebb adag a gyomorcsavarodás megelőzésére</li>
+                                <li><strong>Táplálék mennyiség:</strong> Átlagosan 3-4 csésze száraz táp naponta</li>
+                                <li><strong>Kerülendő:</strong> nagy mennyiségű gabona és mesterséges adalékok</li>
+                                <li><strong>Friss víz:</strong> Mindig legyen elérhető tiszta ivóvíz</li>
+                            </ul>
                         </section>
                     </div>
 
                     <div class="col-12 col-md-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Testmozgás</h2>
+                            <p>Annak ellenére, hogy rendkívül gyorsak, az agarak meglepően nyugodt kutyák.</p>
+                            <ul>
+                                <li><strong>Napi séta:</strong> 1-2 óra séta ajánlott</li>
+                                <li><strong>Futtatás:</strong> Heti 2-3 alkalommal szükséges a szabad futás</li>
+                                <li><strong>Pihenés:</strong> Napi 18-20 óra alvás normális</li>
+                                <li><strong>Időjárás:</strong> Hidegben kabát szükséges a vékony szőrzet miatt</li>
+                            </ul>
                         </section>
                     </div>
 
                     <div class="col-12 col-md-4">
-                        <section>
+                        <section class="care-section">
                             <h2>Ápolás</h2>
+                            <p>Az agarak ápolása viszonylag egyszerű, de rendszeres figyelmet igényel.</p>
+                            <ul>
+                                <li><strong>Szőrápolás:</strong> Heti 1-2 alkalommal puha kefével</li>
+                                <li><strong>Fürdés:</strong> 2-3 havonta speciális kutyasamponnal</li>
+                                <li><strong>Körömvágás:</strong> Havonta szükséges</li>
+                                <li><strong>Fogápolás:</strong> Heti 2-3 alkalommal fogmosás ajánlott</li>
+                                <li><strong>Orvosi ellenőrzés:</strong> Évente legalább egyszer</li>
+                            </ul>
                         </section>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="card quiz-card">
+                            <h2>Készen állsz agarat örökbefogadni?</h2>
+                            <p>Válaszolj az alábbi kérdésekre, hogy kiderüljön, felkészültél-e egy agár gondozására!</p>
+                            
+                            <form id="adoption-quiz">
+                                <div class="quiz-question">
+                                    <label><strong>1. Van bekerített udvarod vagy közeli bekerített parkod?</strong></label>
+                                    <div>
+                                        <input type="radio" name="q1" value="5" id="q1a"> <label for="q1a">Igen, van biztonságos bekerített területem</label><br>
+                                        <input type="radio" name="q1" value="3" id="q1b"> <label for="q1b">Van közeli bekerített park</label><br>
+                                        <input type="radio" name="q1" value="0" id="q1c"> <label for="q1c">Nincs, de sokat sétálok</label>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question">
+                                    <label><strong>2. Mennyi időt tudsz naponta a kutyáddal tölteni?</strong></label>
+                                    <div>
+                                        <input type="radio" name="q2" value="5" id="q2a"> <label for="q2a">Többnyire otthon vagyok</label><br>
+                                        <input type="radio" name="q2" value="3" id="q2b"> <label for="q2b">4-6 órát</label><br>
+                                        <input type="radio" name="q2" value="1" id="q2c"> <label for="q2c">2-3 órát</label>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question">
+                                    <label><strong>3. Van tapasztalatod kutyatartásban?</strong></label>
+                                    <div>
+                                        <input type="radio" name="q3" value="5" id="q3a"> <label for="q3a">Igen, már volt kutyám</label><br>
+                                        <input type="radio" name="q3" value="3" id="q3b"> <label for="q3b">Gyerekkoromban volt</label><br>
+                                        <input type="radio" name="q3" value="2" id="q3c"> <label for="q3c">Ez lenne az első kutyám</label>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question">
+                                    <label><strong>4. Tisztában vagy az agarak speciális igényeivel? (vékony bőr, hidegérzékenység, vadászösztön)</strong></label>
+                                    <div>
+                                        <input type="radio" name="q4" value="5" id="q4a"> <label for="q4a">Igen, sokat kutattam utánuk</label><br>
+                                        <input type="radio" name="q4" value="3" id="q4b"> <label for="q4b">Ismerek néhány dolgot</label><br>
+                                        <input type="radio" name="q4" value="1" id="q4c"> <label for="q4c">Most kezdek tájékozódni</label>
+                                    </div>
+                                </div>
+
+                                <div class="quiz-question">
+                                    <label><strong>5. Rendelkezel elegendő anyagi háttérrel? (állatorvos, minőségi táp, felszerelés)</strong></label>
+                                    <div>
+                                        <input type="radio" name="q5" value="5" id="q5a"> <label for="q5a">Igen, van tartalékom</label><br>
+                                        <input type="radio" name="q5" value="3" id="q5b"> <label for="q5b">Az alapvető költségekre igen</label><br>
+                                        <input type="radio" name="q5" value="0" id="q5c"> <label for="q5c">Szűkösen, de megoldom</label>
+                                    </div>
+                                </div>
+
+                                <button type="button" id="quiz-submit" class="btn-submit">Eredmény megtekintése</button>
+                            </form>
+
+                            <div id="quiz-result"></div>
+                            <div id="requirement-checklist"></div>
+                        </div>
                     </div>
                 </div>
             </div>
